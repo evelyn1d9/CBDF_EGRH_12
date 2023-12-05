@@ -1,0 +1,41 @@
+    <div class="container">
+        <h1>Calculadora básica</h1>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Ingrese el número 1</label>
+                        <input [(ngModel)]="numero1" type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="0">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Ingrese el número 2</label>
+                        <input [(ngModel)]="numero2" type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                   <p>Resultado: {{resultado.toFixed(2)}} </p>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary" (click)="sumarNumeros();">Sumar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-danger" (click)="restarNumeros();">Restar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info" (click)="multiplicarNumeros();">Multiplicar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-warning" (click)="dividirNumeros();">Dividir</button>
+                </div>
+            </div>
+   
+        </div>
+    </div>       
